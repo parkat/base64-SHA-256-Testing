@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+<html>
+    <head>
+        <title>BASE 64 CONVERTER</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+    <body>
+        
+        <div>Hello World!</div>
+        <br>
+        <p>SGVsbG8gV29ybGQh </p>
+        
+        <br><!-- start converter content -->
+        <input type="text" id="inpt" name="input" value="Put text to be encoded here..">
+        <div id="out">
+            
+        </div>
+ <script>
+     
+     const { createHash } = require('crypto');
+
+function hash(string) {
+  return createHash('sha256').update(string).digest('hex');
+}
+//expires feb 1 2023
+
+//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
+     </script>
+        
+        
+    </body>
+</html>
