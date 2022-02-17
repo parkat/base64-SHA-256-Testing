@@ -9,7 +9,11 @@ and open the template in the editor.
         <title>BASE 64 CONVERTER</title>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="../main.js" type="text/javascript"></script>
+<script type="module" src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        
     </head>
+    
     <body>
         
         <div>Hello World!</div>
@@ -17,24 +21,22 @@ and open the template in the editor.
         <p>SGVsbG8gV29ybGQh </p>
         
         <br><!-- start converter content -->
+        <label for="inpt">Put text to encode here: </label>
         <input type="text" id="inpt" name="input" >
         <br>
-        <input type="button" id="submit" name="submit" value="Submit">
-        <div id="out">
+        <br>
+        <input type="button" id="sha" name="submitSHA" value="Submit to SHA-2" onclick="Shasub()">
+        <input type="button" id="b64" name="submitB64" value="Submit to Base-64" onclick="Bsub()">
+        <br>
+        
+        <fieldset>
+            <legend> Output</legend>
+        <div id="out" >
             
             
         </div>
- <script>
-     
-     const { createHash } = require('crypto');
-
-function hash(string) {
-  return createHash('sha256').update(string).digest('hex');
-}
-//expires feb 1 2023
-
-//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
-     </script>
+            
+        </fieldset>
         
         
     </body>
